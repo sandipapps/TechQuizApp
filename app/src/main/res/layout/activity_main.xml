@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#e8f4f8"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- Create a TextView to show the title. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Technology Awareness Quiz"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="50sp" />
+    <!-- Create an ImageButton for starting the game. -->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/play"
+        android:onClick="startGame" />
+    <!-- Also create a TextView to show the text "Play" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="40sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:onClick="startGame" />
+    <!-- Both the ImageButton and the TextView are clickable and once clicked
+    startGame() method in MainActivity will be called. -->
+</LinearLayout>
